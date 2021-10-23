@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/brand_button.xml" value="0.23981481481481481" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/button.xml" value="0.22870370370370371" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/liner_border.xml" value="0.23981481481481481" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/linner_border.xml" value="0.23981481481481481" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/linner_layout.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/main_layout.xml" value="0.22407407407407406" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/tab_layout.xml" value="0.22407407407407406" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/theodoi_item.xml" value="0.2490740740740741" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/title.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_login.xml" value="0.14583333333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_thuonghieu.xml" value="0.14583333333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/dangsale_fragment.xml" value="0.14583333333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/doanhthucao_fragment.xml" value="0.14583333333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/giohang_layout.xml" value="0.17300724637681159" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/login_activity.xml" value="0.13020833333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/moikhaitruong_fragment.xml" value="0.14583333333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/taikhoan_layout.xml" value="0.17300724637681159" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/theodoi_layout.xml" value="0.4" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/thuonghieu_layout.xml" value="0.13020833333333334" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/trangchu_layout.xml" value="0.17300724637681159" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/menu/bottom_nav.xml" value="0.2064814814814815" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14635416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
