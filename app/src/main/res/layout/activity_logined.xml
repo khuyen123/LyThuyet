@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/edt_boder"
-                android:text="@string/Signup" />
+                android:text="@string/Signup"/>
         </LinearLayout>
 
         <CheckBox

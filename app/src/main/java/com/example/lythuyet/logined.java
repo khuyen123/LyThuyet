@@ -23,7 +23,7 @@ public class logined extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_logined);
         login_button = findViewById(R.id.btn_login);
-        sigup_button = findViewById(R.id.btn_signup);
+
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +31,7 @@ public class logined extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        sigup_button= findViewById(R.id.btn_signup);
         sigup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

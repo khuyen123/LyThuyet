@@ -78,6 +78,7 @@
 
         <EditText
             android:id="@+id/edt_ten"
+            android:paddingLeft="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_below="@id/edt_diachi"
