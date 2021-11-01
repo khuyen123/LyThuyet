@@ -15,24 +15,50 @@ import android.widget.Button;
 import android.widget.Switch;
 
 public class MainActivity extends AppCompatActivity {
-    Button but;
+    BottomNavigationView bot_nav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_logined);
-        but = findViewById(R.id.loginbutton);
-        but.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_main);
+        bot_nav = findViewById(R.id.bottom_nav);
+        bot_nav.setSelectedItemId(R.id.trangchu);
+        bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                openMainActivity();
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId())
+                {
+                    case R.id.trangchu:
+                        startActivity(new Intent(getApplicationContext(),trangchu_activity.class));
+
+                        overridePendingTransition(2,2);
+                        break;
+
+                    case  R.id.thuonghieu:
+                        startActivity(new Intent(getApplicationContext(),thuonghieu_activity.class));
+
+                        overridePendingTransition(2,2);
+                        break;
+                    case R.id.theodoi:
+                        startActivity(new Intent(getApplicationContext(),theodoi_activity.class));
+
+                        overridePendingTransition(0,0);
+                        break;
+                    case R.id.taikhoan:
+                        startActivity(new Intent(getApplicationContext(),taikhoan_activity.class));
+
+                        overridePendingTransition(0,0);
+                        break;
+                    case R.id.giohang:
+                        startActivity(new Intent(getApplicationContext(),giohang_activity.class));
+
+                        overridePendingTransition(0,0);
+                        break;
+
+                }
+                return false;
             }
         });
-            };
-    private void openMainActivity()
-    {
-        Intent intent= new Intent(this, logined.class);
-        startActivity(intent);
     }
 }

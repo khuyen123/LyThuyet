@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".logined">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="307dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logologin" />
+
+    <LinearLayout
+        android:id="@+id/line_slogan"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@id/img_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/slogan"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/slogan1"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_slogan"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+
+            android:id="@+id/edt_user"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edt_boder"
+            android:hint="@string/UserName" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@id/edt_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_boder"
+            android:hint="@string/Password" />
+
+
+        <LinearLayout
+            android:id="@+id/line_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_red"
+                android:text="@string/Login" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/edt_boder"
+                android:text="@string/Signup" />
+        </LinearLayout>
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Bạn đến từ" />
+    </RelativeLayout>
+</RelativeLayout>
