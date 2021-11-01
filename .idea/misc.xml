@@ -5,12 +5,10 @@
       <map>
         <entry key="..\:/Nam3/LyThuyet - Copy/app/src/main/res/layout/filemoi.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet - Copy/app/src/main/res/layout/thuonghieu_layout.xml" value="0.12360688956433637" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable-v24/btn_red.xml" value="0.2703125" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/brand_button.xml" value="0.23981481481481481" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/button.xml" value="0.22870370370370371" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.14635416666666667" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2703125" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/liner_border.xml" value="0.23981481481481481" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/linner_border.xml" value="0.23981481481481481" />
@@ -19,28 +17,16 @@
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/tab_layout.xml" value="0.22407407407407406" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/theodoi_item.xml" value="0.2490740740740741" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/drawable/title.xml" value="0.14635416666666667" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/acb.xml" value="0.25416666666666665" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_intro.xml" value="0.12" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_login.xml" value="0.14583333333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_logined.xml" value="0.25416666666666665" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_singup.xml" value="0.13020833333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_taikhoan.xml" value="0.13020833333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_theodoi.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_thuonghieu.xml" value="0.14583333333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/activity_trangchu.xml" value="0.13020833333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/adu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/adukinh.xml" value="0.25416666666666665" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/dangsale_fragment.xml" value="0.14583333333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/doanhthucao_fragment.xml" value="0.14583333333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/giohang_layout.xml" value="0.17300724637681159" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/home_item_listview.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/login_activity.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/moikhaitruong_fragment.xml" value="0.14583333333333334" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/singup_activity.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/taikhoan_layout.xml" value="0.17300724637681159" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/text.xml" value="0.25416666666666665" />
-        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/theodoi_layout.xml" value="0.152" />
+        <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/theodoi_layout.xml" value="0.4" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/thuonghieu_layout.xml" value="0.13020833333333334" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/layout/trangchu_layout.xml" value="0.17300724637681159" />
         <entry key="..\:/Nam3/LyThuyet/app/src/main/res/menu/bottom_nav.xml" value="0.2064814814814815" />

@@ -10,25 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LyThuyet">
         <activity
-            android:name=".thuonghieu_activity"
-            android:exported="true" />
-        <activity
-            android:name=".trangchu_activity"
-            android:exported="true" />
-        <activity
-            android:name=".taikhoan_activity"
-            android:exported="true" />
-        <activity
-            android:name=".giohang_activity"
-            android:exported="true" />
-        <activity
-            android:name=".theodoi_activity"
-            android:exported="true" />
-        <activity
-            android:name=".singup_activity"
-            android:exported="true" />
-        <activity
             android:name=".logined"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,9 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
     </application>
 
 </manifest>
