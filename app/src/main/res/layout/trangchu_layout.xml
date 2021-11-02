@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="trang chủ"/>
+        android:layout_height="match_parent" />
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/trangchu_bottom_nav"
         android:layout_width="wrap_content"
@@ -16,4 +16,13 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav"
         android:background="?android:windowBackground"/>
+
+    <TextView
+        android:id="@+id/txv_tenSp"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@id/img_imgsanpham"
+        android:text="Trang Chủ"
+        android:textSize="20sp" />
 </RelativeLayout>

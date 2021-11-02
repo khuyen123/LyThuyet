@@ -19,11 +19,11 @@
 
         <TextView
             android:id="@+id/txv_tenSp"
-            android:textSize="25sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/img_imgsanpham"
-            android:text="tên sản phẩm" />
+            android:text="tên sản phẩm"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/txv_motaSp"
