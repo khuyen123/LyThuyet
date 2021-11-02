@@ -1,15 +1,19 @@
 package com.example.lythuyet;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class IntroActivity extends AppCompatActivity {
+public class intro_activity extends AppCompatActivity {
     private ViewPager intro_screenPager;
+
     intro_viewpaper_adapter intro_viewpaper_adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +29,7 @@ public class IntroActivity extends AppCompatActivity {
         intro_screenPager = findViewById(R.id.intro_viewpager);
         intro_viewpaper_adapter = new intro_viewpaper_adapter(this,mlist);
         intro_screenPager.setAdapter(intro_viewpaper_adapter);
+
+
     }
 }

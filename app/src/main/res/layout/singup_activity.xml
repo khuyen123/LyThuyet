@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_centerInParent="true"
     android:layout_height="match_parent">
-
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="307dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/logologin" />
-
     <LinearLayout
         android:id="@+id/line_slogan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:orientation="vertical">
-
         <TextView
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/slogan"
-            android:textSize="30sp" />
+            android:textSize="20sp"
+            android:text="@string/slogan"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/slogan1"
-            android:textSize="15sp" />
 
     </LinearLayout>
-
 
     <RelativeLayout
         android:id="@+id/rel_2"
@@ -40,57 +31,89 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/line_slogan"
         android:orientation="vertical"
-        android:padding="30dp">
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edt_boder"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint="Email" />
 
         <EditText
 
-            android:id="@+id/edt_user"
+            android:id="@+id/edt_sdt"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:paddingLeft="10dp"
+            android:layout_below="@+id/edt_email"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             android:background="@drawable/edt_boder"
-            android:hint="@string/UserName" />
+            android:drawableLeft="@drawable/phone"
+            android:hint="Số điện thoại" />
 
         <EditText
-            android:id="@+id/edt_password"
+            android:id="@+id/edt_matKhau"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:paddingLeft="10dp"
-            android:layout_below="@id/edt_user"
+            android:layout_below="@id/edt_sdt"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/edt_boder"
+            android:drawableLeft="@drawable/lock"
             android:hint="@string/Password" />
 
+        <EditText
+            android:id="@+id/edt_diachi"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_matKhau"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_boder"
+            android:drawableLeft="@drawable/location"
+            android:hint="@string/address" />
+
+        <EditText
+            android:id="@+id/edt_ten"
+            android:paddingLeft="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_diachi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edt_boder"
+            android:hint="@string/name" />
 
         <LinearLayout
             android:id="@+id/line_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt_password"
+            android:layout_below="@id/edt_ten"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="30dp">
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/login_singup"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/btn_red"
+                android:background="@drawable/edt_boder"
                 android:text="@string/Login" />
 
             <Button
-                android:id="@+id/btn_signup"
+                android:id="@+id/singup_signup"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/edt_boder"
-                android:text="@string/Signup"/>
+                android:background="@drawable/btn_red"
+                android:text="@string/Signup" />
+
         </LinearLayout>
 
         <CheckBox
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/line_btn"

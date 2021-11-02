@@ -89,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_percent="0.92"
+            app:layout_constraintHeight_percent="0.9"
             app:layout_constraintStart_toStartOf="parent"
             android:background="@drawable/main_layout"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" >
@@ -247,7 +247,15 @@
                     app:layout_constraintStart_toEndOf="@+id/imageButton2D"
                     app:layout_constraintTop_toTopOf="parent" />
             </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
-    </android.support.constraint.ConstraintLayout>
-
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/thuonghieu_bot_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav" />
 </android.support.constraint.ConstraintLayout>

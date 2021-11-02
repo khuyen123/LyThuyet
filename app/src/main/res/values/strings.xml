@@ -2,4 +2,18 @@
     <string name="app_name">LyThuyet</string>
     <string name="xemtatca"><u>Xem tất cả </u>.</string>
     <string name="doanhthu"><u>Doanh Thu Cao</u>.</string>
+    <string name="UserName">Email hoặc số điện thoại</string>
+    <string name="Password">Mật khẩu</string>
+    <string name="Login">Đăng nhập</string>
+    <string name="Signup">Đăng ký</string>
+    <string name="slogan">MÀN RÈM CAO CẤP</string>
+    <string name="slogan1">Sự lựa chọn tuyệt vời cho căn phòng bạn</string>
+    <string name="search">Màn rèm cao cấp...</string>
+    <string name="name">Họ và tên</string>
+    <string name="address">Địa chỉ</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_brand">BRAND</string>
+    <string name="menu_follow">THEO DÕI</string>
+    <string name="menu_cart">GIỎ HÀNG</string>
+    <string name="menu_profile">CÁ NHÂN</string>
 </resources>

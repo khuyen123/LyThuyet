@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LyThuyet">
         <activity
-            android:name=".IntroActivity"
+            android:name=".intro_activity"
             android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".logined"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,13 +24,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".logined"
+            android:name=".singup_activity"
+            android:exported="true" />
+        <activity
+            android:name=".giohang_activity"
+            android:exported="true" />
+        <activity
+            android:name=".taikhoan_activity"
+            android:exported="true" />
+        <activity
+            android:name=".theodoi_activity"
+            android:exported="true" />
+        <activity
+            android:name=".trangchu_activity"
+            android:exported="true" />
+        <activity
+            android:name=".thuonghieu_activity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

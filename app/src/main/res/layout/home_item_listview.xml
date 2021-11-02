@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_sanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/img_imgsanpham"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/txv_tenSp"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_imgsanpham"
+            android:text="tên sản phẩm" />
+
+        <TextView
+            android:id="@+id/txv_motaSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txv_tenSp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/img_imgsanpham"
+            android:text="mô tả sản phẩm" />
+
+        <Button
+            android:id="@+id/btn_chitiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_motaSp"
+            android:layout_alignParentRight="true"
+            android:text="Chi tiết" />
+    </RelativeLayout>
+
+</RelativeLayout>
