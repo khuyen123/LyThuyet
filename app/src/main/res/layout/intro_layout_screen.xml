@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="219dp" />
+        app:layout_constraintGuide_end="183dp" />
 
     <TextView
         android:id="@+id/intro_title"
@@ -29,12 +29,11 @@
         android:id="@+id/intro_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/intro_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
+
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -42,10 +41,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-    android:paddingLeft="32dp"
+        android:paddingLeft="32dp"
         android:paddingRight="32dp"
         android:lineSpacingExtra="12dp"
         android:text="TextView"
+        android:textAlignment="center"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
