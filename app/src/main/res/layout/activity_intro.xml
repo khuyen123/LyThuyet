@@ -5,8 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".intro_activity"
-    android:background="@drawable/intro_1">
+    >
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/logologin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <android.support.v4.view.ViewPager
         android:id="@+id/intro_viewpager"
         android:layout_width="match_parent"
@@ -15,39 +23,47 @@
         app:layout_constraintHeight_percent="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735">
+        app:layout_constraintVertical_bias="0.735"/>
 
-    </android.support.v4.view.ViewPager>
-
-    <android.support.design.widget.FloatingActionButton
+    <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tiếp"
+        android:textSize="15dp"
+
+        android:paddingRight="5dp"
+        android:background="@drawable/next_button_background"
+        android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <android.support.design.widget.TabLayout
+        android:id="@+id/tab_intro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next_button"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/intro_selector"
+        app:tabUnboundedRipple="true">
 
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Left" />
 
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Center" />
-
-        <android.support.design.widget.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Right" />
     </android.support.design.widget.TabLayout>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/start"
+        android:textColor="@color/white"
+        android:background="@drawable/button_gradient"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="Bắt đầu"
+        app:layout_constraintBottom_toBottomOf="@+id/intro_viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
