@@ -5,225 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="434dp" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="577dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="493dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="537dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="302dp" />
-
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="860dp" />
-    <Button
-        android:id="@+id/button"
-        android:layout_width="82dp"
-        android:layout_height="46dp"
-        android:text="<"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="18dp" />
+        app:layout_constraintGuide_end="219dp" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/intro_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thông tin tài khoản"
-        android:textSize="24sp"
+        android:text="TextView"
+        android:textSize="32dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="18dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_editor_absoluteX="175dp"/>
 
-    <Button
-        android:id="@+id/button2"
+    <ImageView
+        android:id="@+id/intro_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lưu"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <android.support.constraint.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="135dp" />
-
-    <android.support.constraint.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="144dp" />
-
-    <android.support.constraint.Barrier
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="82dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="384dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/intro_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="216dp"
-        android:layout_height="24dp"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:text="Giữ an toàn cho tài khoản của bạn"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="95dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="157dp"
-        android:layout_height="58dp"
-        android:background="@drawable/ic_launcher_background"
-        android:text=" Xác minh Email"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="168dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
+        android:id="@+id/intro_description"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thông tin cơ bản"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="254dp" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/account"
-        android:text="Hội chị em"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="316dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hoichiem@gmail.com"
-        android:textStyle="bold"
-        android:textSize="26sp"
-        android:drawableLeft="@drawable/ic_email"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="376dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="01234566789"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:drawableLeft="@drawable/phone"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="439dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Giới tính"
-        android:textStyle="bold"
-        android:textSize="26sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="493dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ngày sinh"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="537dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="150dp"
-        android:layout_height="36dp"
-        android:drawableLeft="@drawable/rename"
-        android:text="Địa chỉ"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="577dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:text=">"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="376dp" />
-
+    android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:lineSpacingExtra="12dp"
+        android:text="TextView"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_title" />
 </android.support.constraint.ConstraintLayout>
