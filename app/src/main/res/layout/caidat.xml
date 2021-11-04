@@ -77,8 +77,8 @@
         android:text="Hội chị em"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="20dp" />
 
     <TextView
         android:id="@+id/textView15"
