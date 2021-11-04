@@ -26,4 +26,5 @@
         android:layout_toEndOf="@id/img_imgsanpham"
         android:text="Trang Chủ"
         android:textSize="20sp" />
+
 </RelativeLayout>

@@ -12,16 +12,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="183dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="82dp"
-        android:layout_height="46dp"
-        android:text="<"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="18dp" />
-
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"

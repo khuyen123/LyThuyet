@@ -9,18 +9,20 @@
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/logologin" />
+
     <LinearLayout
         android:id="@+id/line_slogan"
-        android:layout_below="@id/img_logo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@id/img_logo"
         android:orientation="vertical">
+
         <TextView
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="@string/slogan"/>
+            android:layout_gravity="center"
+            android:text="@string/slogan"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
