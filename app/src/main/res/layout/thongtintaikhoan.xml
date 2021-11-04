@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="451dp"
+        android:layout_width="492dp"
         android:layout_height="99dp"
         android:background="@drawable/khungchu"
         tools:layout_editor_absoluteX="-14dp"
@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="434dp"
-        android:layout_height="150dp"
+        android:layout_width="480dp"
+        android:layout_height="144dp"
         android:background="@drawable/khungchu"
         tools:layout_editor_absoluteX="-10dp"
         tools:layout_editor_absoluteY="81dp" />

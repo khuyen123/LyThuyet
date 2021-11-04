@@ -40,7 +40,10 @@
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/brand_button.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/button.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/button_bogoc.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/caidat.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.37864583333333335" />
@@ -52,25 +55,34 @@
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_email.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/img_diachi.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/img_email.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/img_gioitinh.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/img_ngaysinh.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/intro_selector.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/intro_tab_default.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/intro_tab_selected.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/khungchu.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/khungchu1.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/khungchu2.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/liner_border.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/location.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/lock.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/main_layout.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/maunen.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/phone.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/setting.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/tab_layout.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/theodoi_item.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/tichtron_thatbai.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/title.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/drawable/vi.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/activity_intro.xml" value="0.3625" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/activity_logined.xml" value="0.27309782608695654" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/activity_main.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/adukinh.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/anhyeume.xml" value="0.28532608695652173" />
-        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/caidat.xml" value="0.3625" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/caidat.xml" value="0.33" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/fragment_thuonghieu_dangsale_frag.xml" value="0.3625" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/fragment_thuonghieu_doanhthu_frag.xml" value="0.3625" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/giohang_layout.xml" value="0.18854166666666666" />
@@ -81,7 +93,7 @@
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/taikhoan_layout.xml" value="0.3625" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/text.xml" value="0.18854166666666666" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/theodoi_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/thongtintaikhoan.xml" value="0.22" />
+        <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/thongtintaikhoan.xml" value="0.5" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/thuonghieu_layout.xml" value="0.3625" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/layout/trangchu_layout.xml" value="0.33" />
         <entry key="..\:/Users/nguye/Desktop/LyThuyet/app/src/main/res/menu/bottom_nav.xml" value="0.3484375" />

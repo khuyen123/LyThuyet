@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maunen">
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="440dp" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="182dp"
+        android:layout_height="31dp"
+        android:drawableLeft="@drawable/caidat"
+        android:text="Hội chị em"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số dư trong ví"
+        android:textColor="@color/bg_red"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:background="@drawable/khungchu2"
+        android:text="Rút tiền"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="370dp"
+        android:layout_height="180dp"
+        android:background="@drawable/khungchu1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số dư trong ví"
+        android:textColor="@color/bg_red"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23000đ"
+        android:textColor="@color/bg_red"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử mua hàng"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:background="@drawable/khungchu2"
+        android:text="Nạp tiền"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rủ thêm bạn bè nhận thêm ưu đãi"
+        android:drawableLeft="@drawable/rubanbe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách theo dõi"
+        android:drawableLeft="@drawable/dstheodoi"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản ví"
+        android:drawableLeft="@drawable/vi"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Báo lỗi"
+        android:drawableLeft="@drawable/baoloi"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        s
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá ứng dụng"
+        android:drawableLeft="@drawable/sao"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chăm sóc khách hàng"
+        android:drawableLeft="@drawable/cskh"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="570dp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cài đặt tài khoản"
+        android:drawableLeft="@drawable/setting"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <Button
+        android:id="@+id/caidat_xemtaikhoan"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:text="xem"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="382dp" />
+
+</android.support.constraint.ConstraintLayout> \>
