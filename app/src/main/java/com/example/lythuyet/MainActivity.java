@@ -45,13 +45,14 @@ public class MainActivity extends AppCompatActivity {
 
                         overridePendingTransition(0,0);
                         break;
-                    case R.id.taikhoan:
-                        startActivity(new Intent(getApplicationContext(),taikhoan_activity.class));
+                    case R.id.giohang:
+                        startActivity(new Intent(getApplicationContext(),giohang_activity.class));
 
                         overridePendingTransition(0,0);
                         break;
-                    case R.id.giohang:
-                        startActivity(new Intent(getApplicationContext(),giohang_activity.class));
+
+                    case R.id.taikhoan:
+                        startActivity(new Intent(getApplicationContext(),taikhoan_activity.class));
 
                         overridePendingTransition(0,0);
                         break;

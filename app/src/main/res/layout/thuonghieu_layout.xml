@@ -49,9 +49,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tabTextAppearance="@style/MyCustomTextAppearance"
 
-            >
+            app:tabTextAppearance="@style/MyCustomTextAppearance">
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
@@ -63,8 +62,7 @@
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mới Khai Trương"
-                />
+                android:text="Mới Khai Trương" />
 
             <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
@@ -73,12 +71,12 @@
         </android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
+            android:id="@+id/thuonghieu_view_paper"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:id="@+id/thuonghieu_view_paper"
             app:layout_constraintHeight_percent="0.858"
             app:layout_constraintTop_toBottomOf="@+id/thuonghieu_tab_layout"
-            tools:layout_editor_absoluteX="1dp" />
+            tools:layout_editor_absoluteX="-16dp" />
     </android.support.constraint.ConstraintLayout>
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/thuonghieu_bot_nav"
