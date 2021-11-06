@@ -7,26 +7,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-
-public class trangchu_activity extends AppCompatActivity {
+public class caidat_taikhoan_activity extends AppCompatActivity {
+    Button back;
     BottomNavigationView bot_nav;
-    Button but;
-    ListView lsvHomeSanPham;
-    ArrayList<HomeSanPham> homeSanPhams;
-    HomeSanPhamAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
-        setContentView(R.layout.trangchu_layout);
-        bot_nav = findViewById(R.id.trangchu_bottom_nav);
+        setContentView(R.layout.thongtintaikhoan);
+        bot_nav=findViewById(R.id.tttaikhoan_bot_nav);
+        back = findViewById(R.id.caidat_back);
+        bot_nav.setSelectedItemId(R.id.taikhoan);
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -63,22 +55,13 @@ public class trangchu_activity extends AppCompatActivity {
                 return false;
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(caidat_taikhoan_activity.this,taikhoan_activity.class);
+                startActivity(intent);
 
-        anhXa();
-        adapter = new HomeSanPhamAdapter(this, R.layout.home_item_listview, homeSanPhams);
-        lsvHomeSanPham.setAdapter(adapter);
-    }
-    private void anhXa(){
-        lsvHomeSanPham= (ListView) findViewById(R.id.lsv_home);
-        homeSanPhams = new ArrayList<>();
-
-        // tạo theo constructor
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
+            }
+        });
     }
 }

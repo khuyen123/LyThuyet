@@ -24,14 +24,18 @@
             android:textColor="@color/black"
             android:textSize="30dp" />
 
-        <android.support.design.widget.FloatingActionButton
+        <EditText
+            android:id="@+id/editTextTextPersonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:tint="@color/purple_500"
-            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edt_boder"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:inputType="textPersonName"
+           android:hint="Tìm kiếm thương hiệu"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent" />
+
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
@@ -39,7 +43,7 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.9"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        android:background="@drawable/tab_layout">
+        android:background="@drawable/title">
 
 
         <android.support.design.widget.TabLayout

@@ -6,7 +6,10 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class theodoi_activity extends AppCompatActivity {
     BottomNavigationView bot_nav;
@@ -15,8 +18,10 @@ public class theodoi_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
+
         setContentView(R.layout.theodoi_layout);
         bot_nav= findViewById(R.id.theodoi_bot_nav);
+
         bot_nav.setSelectedItemId(R.id.theodoi);
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

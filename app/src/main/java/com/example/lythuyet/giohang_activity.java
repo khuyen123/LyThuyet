@@ -6,16 +6,27 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 public class giohang_activity extends AppCompatActivity {
     BottomNavigationView bot_nav;
+    Button muangay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.giohang_layout);
+        muangay= findViewById(R.id.button_muangay);
+        muangay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(giohang_activity.this,thanhtoan_activity.class);
+                startActivity(intent);
+            }
+        });
         bot_nav = findViewById(R.id.giohang_bottom_nav);
         bot_nav.setSelectedItemId(R.id.giohang);
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

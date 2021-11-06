@@ -1,102 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/title">
+    tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/rel_1"
-        android:layout_marginTop="30dp"
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="35dp"
+        app:layout_constraintHeight_percent="0.1"
+        android:text="Thông tin tài khoản"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:background="@drawable/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/edt_search"
-            android:layout_width="300dp"
-            android:layout_height="35dp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/edt_boder"
-            android:drawableLeft="@drawable/ic_baseline_search_24"
-            android:hint="@string/search" />
-        <ImageButton
-            android:id="@+id/img_notification"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_toEndOf="@id/edt_search"
-            android:layout_centerVertical="true"
-            android:background="@drawable/ic_baseline_notifications_24"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rel_2"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_below="@id/rel_1"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/edt_boder">
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.83"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:background="@drawable/maunen">
+
+        <Button
+            android:id="@+id/but_dangxuat"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="Đăng xuất"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textAlignment="viewStart"
+            android:drawableLeft="@drawable/ic_baseline_login_24"
+            android:paddingLeft="20dp"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <Button
+            android:id="@+id/textView46"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungchu1"
+            android:text="Báo lỗi"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/baoloi"
+            android:textAlignment="viewStart"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <Button
+            android:id="@+id/textView47"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:text="Chăm sóc khách hàng"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/cskh"
+            android:textAlignment="viewStart"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+        <Button
+            android:id="@+id/taikhoan_ds_theodoi"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungchu1"
+            android:text="Danh sách theo dõi"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="viewStart"
+            android:drawableLeft="@drawable/dstheodoi"
+            android:paddingLeft="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <Button
+            android:id="@+id/caidat_taikhoan"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungchu1"
+            android:text="Cài đặt tài khoản"
+            android:drawableLeft="@drawable/setting"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taikhoan_ds_theodoi" />
 
         <TextView
-            android:id="@+id/txv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="@string/name"
-            android:textSize="20dp" />
+            android:id="@+id/textView12"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintBottom_toBottomOf="@+id/but_dangxuat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <Button
+            android:id="@+id/textView44"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="Tài khoản ví"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/vi"
+            android:textAlignment="viewStart"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/caidat_taikhoan" />
+
+        <Button
+            android:id="@+id/textView41"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/rubanbe"
+            android:text="Rủ thêm bạn bè nhận thêm ưu đãi"
+            android:textAllCaps="false"
+            android:textAlignment="viewStart"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txv_name"
-            android:layout_marginLeft="40dp"
-            android:text="Số tiền trong ví" />
+            android:id="@+id/textView13"
+            android:layout_width="182dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/caidat"
+            android:text="Hội chị em"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
 
         <TextView
+            android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:layout_toEndOf="@id/txv_name"
-            android:text="14.000.000đ" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/rel_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rel_2"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+            android:text="Số dư trong ví"
+            android:textColor="@color/bg_red"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:background="@drawable/img_pa" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/rel_lsvHome"
-        android:layout_below="@id/rel_3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:background="@drawable/khungchu2"
+            android:text="Rút tiền"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="35dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
-        <ListView
-            android:id="@+id/lsv_home"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="370dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/khungchu1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
+        <TextView
+            android:id="@+id/textViewa"
+            app:layout_goneMarginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số dư trong ví"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/bg_red"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="14.000.000đ"
+            android:textColor="@color/bg_red"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Lịch sử mua hàng"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView41"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/khungchu2"
+            android:text="Nạp tiền"
+            android:layout_marginLeft="35dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/cskh"
+            android:text="Chăm sóc khách hàng"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView47"
+            app:layout_constraintStart_toStartOf="@+id/textView47"
+            app:layout_constraintTop_toTopOf="@+id/textView47"
+            app:layout_constraintVertical_bias="0.608" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
     <android.support.design.widget.BottomNavigationView
-    android:id="@+id/taikhoan_bottom_nav"
+        android:id="@+id/taikhoan_bottom_nav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_nav"
-        android:background="?android:windowBackground"/>
-</RelativeLayout>
+        android:background="?android:windowBackground"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav" />
+</android.support.constraint.ConstraintLayout>

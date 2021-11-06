@@ -8,10 +8,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 public class thuonghieu_activity extends AppCompatActivity {
     BottomNavigationView bot_nav;
+    Button lammoi;
     TabLayout tabLayout;
     ViewPager viewPager;
     @Override
@@ -24,6 +27,7 @@ public class thuonghieu_activity extends AppCompatActivity {
         tabLayout= findViewById(R.id.thuonghieu_tab_layout);
         viewPager = findViewById(R.id.thuonghieu_view_paper);
         bot_nav.setSelectedItemId(R.id.thuonghieu);
+
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -60,6 +64,7 @@ public class thuonghieu_activity extends AppCompatActivity {
                 return false;
             }
         });
+
         tabLayout.setupWithViewPager(viewPager);
         thuonghieu_tab_adapter thuonghieuTabAdapter= new thuonghieu_tab_adapter(getSupportFragmentManager());
         thuonghieuTabAdapter.addFrag(new thuonghieu_dangsale_frag(),"Đang Sale");

@@ -47,10 +47,10 @@ public class HomeSanPhamAdapter extends BaseAdapter {
         view = inflater.inflate(layout, null);
 
         // ánh xạ
-        TextView txvTen= view.findViewById(R.id.txv_tenSp);
-        TextView txvMota= view.findViewById(R.id.txv_motaSp);
-        ImageView imgHinh=view.findViewById(R.id.img_imgsanpham);
-        Button btnChiTiet= view.findViewById(R.id.btn_chitiet);
+        TextView txvTen= view.findViewById(R.id.home_name);
+        TextView txvMota= view.findViewById(R.id.home_des);
+        ImageView imgHinh=view.findViewById(R.id.home_img);
+        Button btnChiTiet= view.findViewById(R.id.home_butt);
 
         // Gán giá trị vào HomeSanPham
         HomeSanPham homeSanPham= sanPhamList.get(i);

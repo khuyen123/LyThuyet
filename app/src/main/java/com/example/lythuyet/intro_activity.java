@@ -3,6 +3,7 @@ package com.example.lythuyet;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.SharedMemory;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,9 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +25,8 @@ public class intro_activity extends AppCompatActivity {
     private ViewPager intro_screenPager;
     TabLayout intro_tab;
     Button next_button,get_start;
-    Animation button_ani;
+
+    Animation button_ani,button_out_ani;
     int position=0;
     intro_viewpaper_adapter intro_viewpaper_adapter;
     @Override
@@ -40,12 +44,13 @@ public class intro_activity extends AppCompatActivity {
         List<intro_screen_item> mlist = new ArrayList<>();
         mlist.add(new intro_screen_item("Mua hàng Online","Đặt hàng và thanh toán Online, sau đó sản phẩm sẽ được gửi đến bạn một cách nhanh nhóng",R.drawable.img2));
         mlist.add(new intro_screen_item("Thanh toán Online","Thanh toán đơn giản, tiện lợi, nhanh chóng",R.drawable.img3));
-        mlist.add(new intro_screen_item("Hội chị em","Các chàng trai nhóm 13",R.drawable.baby));
+        mlist.add(new intro_screen_item("Hội chị em","Các chàng trai nhóm 13",R.drawable.intro_3));
         intro_screenPager = findViewById(R.id.intro_viewpager);
         intro_tab = findViewById(R.id.tab_intro);
         next_button = findViewById(R.id.next_button);
         get_start = findViewById(R.id.start);
         button_ani= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_animation);
+        button_out_ani=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_out_ani);
         intro_viewpaper_adapter = new intro_viewpaper_adapter(this,mlist);
         intro_screenPager.setAdapter(intro_viewpaper_adapter);
         intro_tab.setupWithViewPager(intro_screenPager);
@@ -109,6 +114,9 @@ public class intro_activity extends AppCompatActivity {
     private void loadLastScreen() {
         get_start.setVisibility(View.VISIBLE);
         get_start.setAnimation(button_ani);
+        next_button.setAnimation(button_out_ani);
+        intro_tab.setAnimation(button_out_ani);
+        next_button.setAnimation(button_ani);
         intro_tab.setVisibility(View.INVISIBLE);
         next_button.setVisibility(View.INVISIBLE);
     }

@@ -115,13 +115,6 @@
 
         </LinearLayout>
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/line_btn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:text="Bạn đến từ" />
+
     </RelativeLayout>
 </RelativeLayout>

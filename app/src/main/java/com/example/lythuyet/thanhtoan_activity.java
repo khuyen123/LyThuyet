@@ -9,24 +9,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-public class trangchu_activity extends AppCompatActivity {
+public class thanhtoan_activity extends AppCompatActivity {
     BottomNavigationView bot_nav;
-    Button but;
-    ListView lsvHomeSanPham;
-    ArrayList<HomeSanPham> homeSanPhams;
-    HomeSanPhamAdapter adapter;
+    Button button,dangxuat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
-        setContentView(R.layout.trangchu_layout);
-        bot_nav = findViewById(R.id.trangchu_bottom_nav);
+        setContentView(R.layout.activity_thanhtoan);
+        button = findViewById(R.id.dat_hang);
+        bot_nav = findViewById(R.id.thanhtoan_bottom_nav);
+        bot_nav.setSelectedItemId(R.id.giohang);
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -63,22 +59,11 @@ public class trangchu_activity extends AppCompatActivity {
                 return false;
             }
         });
-
-        anhXa();
-        adapter = new HomeSanPhamAdapter(this, R.layout.home_item_listview, homeSanPhams);
-        lsvHomeSanPham.setAdapter(adapter);
-    }
-    private void anhXa(){
-        lsvHomeSanPham= (ListView) findViewById(R.id.lsv_home);
-        homeSanPhams = new ArrayList<>();
-
-        // tạo theo constructor
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
-        homeSanPhams.add(new HomeSanPham("CATAN", "Rèm phòng khách","Thêm vào giỏ", R.drawable.catanshop));
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(thanhtoan_activity.this,"Đặt hàng thành công", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

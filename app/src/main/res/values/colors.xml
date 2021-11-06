@@ -12,4 +12,7 @@
     <color name="tab_gray">#4C4C4C</color>
     <color name="gradient_start">#4599DD</color>
     <color name="gradient_end">#79AAD1</color>
+    <color name="giatien">#F83636</color>
+    <color name="sanpham">#777272</color>
+    <color name="chonpttt">#DC6A6A</color>
 </resources>

@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LyThuyet">
         <activity
+            android:name=".thanhtoan_activity"
+            android:exported="true" />
+        <activity
+            android:name=".caidat_taikhoan_activity"
+            android:exported="true" />
+        <activity
             android:name=".intro_activity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,9 +26,7 @@
         </activity>
         <activity
             android:name=".logined"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".singup_activity"
             android:exported="true" />
@@ -43,7 +47,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

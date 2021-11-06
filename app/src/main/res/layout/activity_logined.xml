@@ -56,12 +56,12 @@
             android:id="@+id/edt_password"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:paddingLeft="10dp"
             android:layout_below="@id/edt_user"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
-            android:hint="@string/Password" />
+            android:hint="@string/Password"
+            android:paddingLeft="10dp" />
 
 
         <LinearLayout
@@ -86,17 +86,65 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/edt_boder"
-                android:text="@string/Signup"/>
+                android:text="@string/Signup" />
         </LinearLayout>
 
         <CheckBox
-
+            android:id="@+id/nhotaikhoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/line_btn"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
-            android:text="Bạn đến từ" />
+            android:text="Nhớ tài khoản" />
+
+        <TextView
+            android:id="@+id/hoac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nhotaikhoan"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="25dp"
+
+            android:text="Hoặc đăng nhập bằng"
+            android:textAlignment="center" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoac"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/fb" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dn_ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoac"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ins" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dn_gg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoac"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="19dp"
+
+            android:layout_toEndOf="@+id/fn_fb"
+
+            android:backgroundTint="@color/white"
+            android:src="@drawable/google" />
     </RelativeLayout>
 </RelativeLayout>
