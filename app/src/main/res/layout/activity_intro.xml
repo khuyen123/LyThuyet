@@ -7,14 +7,6 @@
     tools:context=".intro_activity"
     >
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/logologin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <android.support.v4.view.ViewPager
         android:id="@+id/intro_viewpager"
         android:layout_width="match_parent"
