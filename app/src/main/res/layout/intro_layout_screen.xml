@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="256dp" />
+        app:layout_constraintGuide_end="235dp" />
 
     <TextView
         android:id="@+id/intro_title"
@@ -23,8 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_editor_absoluteX="175dp" />
+        app:layout_editor_absoluteX="175dp"/>
 
     <ImageView
         android:id="@+id/intro_img"
@@ -36,7 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828"
+        app:layout_constraintVertical_bias="0.593"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
