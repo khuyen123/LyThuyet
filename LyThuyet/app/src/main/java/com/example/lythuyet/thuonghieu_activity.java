@@ -11,10 +11,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class thuonghieu_activity extends AppCompatActivity {
     BottomNavigationView bot_nav;
-    Button lammoi;
+    Bundle bundle;
+    TaiKhoan taiKhoan;
     TabLayout tabLayout;
     ViewPager viewPager;
     @Override
@@ -27,7 +29,7 @@ public class thuonghieu_activity extends AppCompatActivity {
         tabLayout= findViewById(R.id.thuonghieu_tab_layout);
         viewPager = findViewById(R.id.thuonghieu_view_paper);
         bot_nav.setSelectedItemId(R.id.thuonghieu);
-
+        getuser();
         bot_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -35,28 +37,24 @@ public class thuonghieu_activity extends AppCompatActivity {
                 {
                     case R.id.trangchu:
                         startActivity(new Intent(getApplicationContext(),trangchu_activity.class));
-
+                        putuser(trangchu_activity.class);
                         overridePendingTransition(0,0);
                         break;
 
                     case  R.id.thuonghieu:
-                        startActivity(new Intent(getApplicationContext(),thuonghieu_activity.class));
-
+                        putuser(thuonghieu_activity.class);
                         overridePendingTransition(0,0);
                         break;
                     case R.id.theodoi:
-                        startActivity(new Intent(getApplicationContext(),theodoi_activity.class));
-
+                        putuser(theodoi_activity.class);
                         overridePendingTransition(0,0);
                         break;
                     case R.id.taikhoan:
-                        startActivity(new Intent(getApplicationContext(),taikhoan_activity.class));
-
+                        putuser(taikhoan_activity.class);
                         overridePendingTransition(0,0);
                         break;
                     case R.id.giohang:
-                        startActivity(new Intent(getApplicationContext(),giohang_activity.class));
-
+                        putuser(giohang_activity.class);
                         overridePendingTransition(0,0);
                         break;
 
@@ -71,5 +69,39 @@ public class thuonghieu_activity extends AppCompatActivity {
         thuonghieuTabAdapter.addFrag(new thuonghieu_khaitruong_frag(),"Mới khai trương");
         thuonghieuTabAdapter.addFrag(new thuonghieu_doanhthu_frag(),"Doanh thu cao");
         viewPager.setAdapter(thuonghieuTabAdapter);
+    }
+    public void getuser()
+    {
+        bundle=getIntent().getExtras();
+        taiKhoan = new TaiKhoan(
+                bundle.getInt("id", 0),
+                bundle.getString("tendangnhap"),
+                bundle.getString("matkhau"),
+                bundle.getString("hoten"),
+                bundle.getString("ngaysinh"),
+                bundle.getString("diachi"),
+                bundle.getString("gioitinh"),
+                bundle.getString("email"),
+                bundle.getString("sdt"),
+                bundle.getInt("sodu")
+        );
+
+    }
+    public void putuser(Class activity)
+    {
+        Bundle bundle2= new Bundle();
+        Intent intent= new Intent(this,activity);
+        bundle2.putString("tendangnhap",taiKhoan.getTendangnhap());
+        bundle2.putString("matkhau",taiKhoan.getMatkhau());
+        bundle2.putString("hoten",taiKhoan.getHoten());
+        bundle2.putString("ngaysinh",taiKhoan.getNgaysinh());
+        bundle2.putString("gioitinh",taiKhoan.getGioitinh());bundle2.putString("tendangnhap",taiKhoan.getTendangnhap());
+        bundle2.putString("sdt",taiKhoan.getSdt());
+        bundle2.putInt("sodu",taiKhoan.getSodu());
+        bundle2.putInt("id",taiKhoan.getId());
+        bundle2.putString("diachi",taiKhoan.getDiachi());
+        bundle2.putString("email",taiKhoan.getEmail());
+        intent.putExtras(bundle2);
+        startActivity(intent);
     }
 }

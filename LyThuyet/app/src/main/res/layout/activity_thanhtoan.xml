@@ -44,24 +44,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <ImageView
-            android:id="@+id/imageView8"
+        <TextView
+            android:id="@+id/textView36"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/diachimuahang"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Thông tin nhận hàng"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phạm Khuyến"
+            android:id="@+id/tennhanhang"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/sdtnhanhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" -0336482917"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/tennhanhang"
+            app:layout_constraintTop_toTopOf="@+id/tennhanhang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinh an, phú vang, thừa thiên huế"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/diachinhanhang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tennhanhang" />
+
         <ImageView
+            android:layout_marginTop="50dp"
             android:id="@+id/imageView9"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:src="@drawable/shopremso1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+            app:layout_constraintTop_toBottomOf="@+id/diachinhanhang" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -104,7 +141,7 @@
             android:hint="Nhập tin nhắn cho người bán"
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
@@ -121,7 +158,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
         <EditText
-            android:id="@+id/editmoi"
+            android:id="@+id/magiam"
             android:layout_width="250dp"
             android:layout_height="30dp"
             android:layout_marginTop="12dp"
@@ -130,7 +167,7 @@
             android:hint="Nhập mã giảm"
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
@@ -148,7 +185,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editmoi" />
+            app:layout_constraintTop_toBottomOf="@+id/magiam" />
 
         <TextView
             android:id="@+id/textView40"
@@ -164,11 +201,11 @@
             app:layout_constraintTop_toBottomOf="@+id/button4" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/tongtien"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
-            android:text="đ148.842"
+            android:text="đ143.842"
             android:textColor="@color/bg_red"
             android:textSize="17dp"
 

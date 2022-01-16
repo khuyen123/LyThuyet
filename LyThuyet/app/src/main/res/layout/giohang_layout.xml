@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/anhsanpham"
             android:layout_width="210dp"
             android:layout_height="210dp"
             android:layout_marginStart="10dp"
@@ -57,37 +57,45 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:src="@drawable/sp_des"
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingTop="20dp"
+            android:text="Rèm cửa chất lượng cao Việt Nhật"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/dongia"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/anhsanpham"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/dongia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="100dp"
             android:text="đ110.000~220.000"
             android:textColor="@color/giatien"
             android:textSize="15dp"
+
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintStart_toStartOf="@+id/imageView5" />
+            app:layout_constraintBottom_toTopOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/anhsanpham"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/khuyenmai"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/makhuyenmai"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/anhsanpham" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -97,7 +105,7 @@
             android:layout_marginEnd="10dp"
             android:src="@drawable/vanchuyen"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/anhsanpham" />
 
         <TextView
             android:id="@+id/textView35"
@@ -109,8 +117,8 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+            app:layout_constraintStart_toEndOf="@+id/anhsanpham"
+            app:layout_constraintTop_toBottomOf="@+id/dongia" />
 
         <Button
             android:id="@+id/kichthuoc1"
@@ -121,7 +129,7 @@
             android:background="@drawable/kichthuoc_button"
             android:text="100x130"
             android:textColor="@color/white"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/anhsanpham"
             app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
         <Button
@@ -139,11 +147,12 @@
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="70dp"
             android:src="@drawable/tt_sanpham"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/button3"

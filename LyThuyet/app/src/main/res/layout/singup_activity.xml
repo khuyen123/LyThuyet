@@ -43,7 +43,14 @@
             android:background="@drawable/edt_boder"
             android:drawableLeft="@drawable/ic_email"
             android:hint="Email" />
-
+        <TextView
+            android:id="@+id/aleremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/edt_email"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/giatien"/>
         <EditText
 
             android:id="@+id/edt_sdt"
@@ -51,10 +58,18 @@
             android:layout_height="40dp"
             android:layout_below="@+id/edt_email"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
             android:drawableLeft="@drawable/phone"
             android:hint="Số điện thoại" />
+        <TextView
+            android:id="@+id/alersdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/edt_sdt"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/giatien"/>
 
         <EditText
             android:id="@+id/edt_matKhau"
@@ -62,33 +77,54 @@
             android:layout_height="40dp"
             android:layout_below="@id/edt_sdt"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
             android:drawableLeft="@drawable/lock"
             android:hint="@string/Password" />
-
+        <TextView
+            android:id="@+id/alermatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/edt_matKhau"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/giatien"/>
         <EditText
             android:id="@+id/edt_diachi"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_below="@id/edt_matKhau"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
             android:drawableLeft="@drawable/location"
             android:hint="@string/address" />
-
+        <TextView
+            android:id="@+id/alerdiachi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/edt_diachi"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/giatien"/>
         <EditText
             android:id="@+id/edt_ten"
-            android:paddingLeft="10dp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_below="@id/edt_diachi"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
-            android:hint="@string/name" />
-
+            android:hint="@string/name"
+            android:paddingLeft="10dp" />
+        <TextView
+            android:id="@+id/alerhoten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/edt_ten"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/giatien"/>
         <LinearLayout
             android:id="@+id/line_btn"
             android:layout_width="wrap_content"

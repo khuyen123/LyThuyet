@@ -42,9 +42,11 @@
         android:orientation="vertical"
         android:padding="30dp">
 
+
+
         <EditText
 
-            android:id="@+id/edt_user"
+            android:id="@+id/username"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
@@ -52,23 +54,42 @@
             android:hint="@string/UserName"
             android:paddingLeft="10dp" />
 
+        <TextView
+            android:id="@+id/alertusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:text=""
+            android:textColor="@color/giatien" />
+
         <EditText
-            android:id="@+id/edt_password"
+            android:id="@+id/password"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:layout_below="@id/edt_user"
+            android:layout_below="@id/username"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:background="@drawable/edt_boder"
             android:hint="@string/Password"
+            android:inputType="textPassword"
             android:paddingLeft="10dp" />
 
-
+        <TextView
+            android:id="@+id/alertpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:textColor="@color/giatien"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:text="" />
         <LinearLayout
             android:id="@+id/line_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/edt_password"
+            android:layout_below="@+id/password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp">
 
